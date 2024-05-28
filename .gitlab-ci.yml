@@ -1,0 +1,2 @@
+include:
+  - component: usine.solution-libre.fr/gitlab/components/lint/markdown@0.2.1
