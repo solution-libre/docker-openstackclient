@@ -41,9 +41,9 @@ RUN apk update \
 ENV USER_NAME=openstack
 ENV GROUP_NAME=openstack
 
-RUN addgroup $GROUP_NAME && \
-    adduser --shell /sbin/nologin --disabled-password \
-    --no-create-home --ingroup $GROUP_NAME $USER_NAME
+RUN addgroup $GROUP_NAME \
+    && adduser --shell /sbin/nologin --disabled-password \
+        --no-create-home --ingroup $GROUP_NAME $USER_NAME
 
 USER $USER_NAME
 
