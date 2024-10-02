@@ -38,4 +38,13 @@ RUN apk update \
     && apk del gcc musl-dev linux-headers \
     && rm -rf /var/cache/apk/*
 
+ENV USER_NAME=openstack
+ENV GROUP_NAME=openstack
+
+RUN addgroup $GROUP_NAME && \
+    adduser --shell /sbin/nologin --disabled-password \
+    --no-create-home --ingroup $GROUP_NAME $USER_NAME
+
+USER $USER_NAME
+
 ENTRYPOINT ["openstack"]
