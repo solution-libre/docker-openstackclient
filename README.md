@@ -17,13 +17,13 @@
 ## Setup
 
 ```sh
-
+docker pull registry.solution-libre.fr/docker/openstackclient:latest
 ```
 
 ## Usage
 
 ```sh
-
+docker run --rm registry.solution-libre.fr/docker/openstackclient:latest --version
 ```
 
 ## Development
