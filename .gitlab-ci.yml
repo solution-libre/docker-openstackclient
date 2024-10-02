@@ -20,6 +20,7 @@ include:
     inputs:
       stage: linting
   - component: usine.solution-libre.fr/gitlab/components/changelog/parse@0.1.2
+  - template: Jobs/Container-Scanning.gitlab-ci.yml
 
 stages:
   - linting
