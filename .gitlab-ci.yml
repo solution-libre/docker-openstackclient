@@ -82,4 +82,4 @@ release:
     - |
       release-cli create --name "$CI_COMMIT_TAG" --tag-name $CI_COMMIT_TAG \
         --description release-note.md \
-        --assets-link "{\"name\":\"Docker image\",\"url\":\"${CI_REGISTRY_IMAGE}:${CI_COMMIT_TAG}"\",\"link_type\":\"image\"}"
+        --assets-link "{\"name\":\"Docker image\",\"url\":\"${CI_REGISTRY_IMAGE}:${CI_COMMIT_TAG}\",\"link_type\":\"image\"}"
