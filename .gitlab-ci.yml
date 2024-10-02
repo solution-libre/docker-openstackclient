@@ -16,8 +16,19 @@
 # along with OpenStack Client Docker Image.  If not, see <https://www.gnu.org/licenses/>.
 
 include:
-  - component: usine.solution-libre.fr/gitlab/components/lint/markdown@0.2.1
-  - component: gitlab.com/guided-explorations/ci-components/hadolint/hadolint@0.1.6
+  - component: $CI_SERVER_FQDN/gitlab/components/lint/markdown@0.2.1
+    inputs:
+      stage: linting
+
+stages:
+  - linting
+  - build
+
+hadolint:
+  stage: linting
+  image: registry.gitlab.com/pipeline-components/hadolint:latest
+  script:
+    - hadolint Dockerfile
 
 docker-build:
   stage: build
