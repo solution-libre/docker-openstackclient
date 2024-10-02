@@ -70,6 +70,10 @@ docker test:
   script:
     - docker run --rm ${DOCKER_IMAGE_NAME} --version
 
+container_scanning:
+  variables:
+    CS_IMAGE: $CI_REGISTRY_IMAGE:$CI_COMMIT_REF_SLUG
+
 release:
   stage: release
   image: registry.gitlab.com/gitlab-org/release-cli:latest
