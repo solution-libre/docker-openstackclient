@@ -1,0 +1,12 @@
+{
+	"recommendations": [
+		"gitlab.gitlab-workflow",
+		"exiasr.hadolint",
+		"ymotongpoo.licenser",
+		"davidanson.vscode-markdownlint",
+		"redhat.vscode-yaml"
+	],
+	"unwantedRecommendations": [
+		
+	]
+}
