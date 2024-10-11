@@ -31,7 +31,8 @@ docker run --rm registry.solution-libre.fr/docker/openstackclient:latest --versi
 [Solution Libre]'s repositories are open projects,
 and community contributions are essential for keeping them great.
 
-[Fork this repo on our GitLab](https://usine.solution-libre.fr/docker/openstackclient/-/forks/new)
+[Fork this repo on our GitLab](https://usine.solution-libre.fr/docker/openstackclient/-/forks/new) or
+[on GitHub](https://github.com/solution-libre/docker-openstackclient/fork)
 
 ## Contributors
 
